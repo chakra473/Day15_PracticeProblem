@@ -29,8 +29,14 @@ namespace HashTableProblem
             hash.Add("17", "avoidable");
             hash.Add("18", "situations");
 
-            string hashget = hash.Get("18");
+            string hashget = hash.Get("17");
             Console.WriteLine("18th index value is: " + hashget);
+
+            Console.WriteLine("Removing \"avoidable\" word from above paragraph");
+
+            string hash2 = hash.Get("17");
+            Console.WriteLine("Removed value from Paragraph is: " + hash2);
+            hash.Remove("17");
         }
     }
 }
